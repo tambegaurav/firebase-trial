@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="./style.css">
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+        <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+    </head>
+    <body>
+
+        <h1>Cafe rating on FireBase:)</h1>
+
+        <div class="content">
+
+            <form id="add-cafe-form">
+                <input type="text" name="name" placeholder="Cafe name">
+                <input type="text" name="city" placeholder="Cafe city">
+                <button>Add Cafe</button>
+            </form>
+
+            <ul id="cafe-list"></ul>
+
+        </div>
+
+        
+
+
+        
+
+        <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyD-ZdX0fyXqYSAn1j1YmIVKp9g6JHv-3gQ",
+            authDomain: "caferating.firebaseapp.com",
+            databaseURL: "https://caferating.firebaseio.com",
+            projectId: "caferating",
+            storageBucket: "caferating.appspot.com",
+            messagingSenderId: "419062740201",
+            appId: "1:419062740201:web:7738086815428ae0742c78",
+            measurementId: "G-46M2FN1B87"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+        firebase.analytics();
+        const db = firebase.firestore();
+        
+        </script>
+        <script src="./app.js"></script>
+    </body>
+</html>
